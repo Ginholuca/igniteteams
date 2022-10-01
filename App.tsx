@@ -6,7 +6,7 @@ import {
   Roboto_700Bold,
 } from '@expo-google-fonts/roboto'
 
-import { theme } from './src/theme'
+import theme from './src/theme'
 
 import { Loading } from '@components/Loading'
 
