@@ -6,6 +6,7 @@ import { Highlight } from '@components/HighLight'
 import { GroupCard } from '@components/GroupCard'
 
 import { Container } from './styles'
+import { ListEmpty } from '@components/ListEmpty'
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>(['Galera do Bob'])
@@ -20,6 +21,10 @@ export function Groups() {
         data={groups}
         keyExtractor={(item) => item}
         renderItem={({ item }) => <GroupCard key={item} title={item} />}
+        contentContainerStyle={groups.length === 0 && { flex: 1 }}
+        ListEmptyComponent={() => (
+          <ListEmpty message="Cadastre a primeira turma!" />
+        )}
       />
 
       <GroupCard title="Galera do Ignite" />
