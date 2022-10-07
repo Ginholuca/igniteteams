@@ -9,7 +9,7 @@ import {
 import theme from './src/theme'
 
 import { Loading } from '@components/Loading'
-
+import { NewGroup } from '@screens/NewGroup'
 import { Groups } from '@screens/Groups'
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   )
 }

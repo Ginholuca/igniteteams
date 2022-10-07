@@ -29,8 +29,6 @@ export function Groups() {
       />
 
       <Button title="Criar nova turma" />
-
-      <GroupCard title="Galera do Ignite" />
     </Container>
   )
 }
