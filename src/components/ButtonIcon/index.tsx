@@ -1,3 +1,4 @@
+import React from 'react'
 import { TouchableOpacityProps } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { FlatList } from 'react-native'
 
 import { Container, Form, HeaderList, NumbersOfPlayers } from './styles'
@@ -14,7 +14,7 @@ import { Button } from '@components/Button'
 
 export function Players() {
   const [team, setTeam] = useState('Time A')
-  const [players, setPlayers] = useState([])
+  const [players, setPlayers] = useState(['Bob', '1Bob', '2Bob'])
 
   return (
     <Container>
