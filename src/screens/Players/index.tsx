@@ -8,6 +8,7 @@ import { Filter } from '@components/Filter'
 import { Input } from '@components/Input'
 import { Highlight } from '@components/HighLight'
 import { ButtonIcon } from '@components/ButtonIcon'
+import { PlayerCard } from '@components/PlayerCard'
 
 export function Players() {
   const [team, setTeam] = useState('Time A')
@@ -41,8 +42,16 @@ export function Players() {
           horizontal
         />
 
-        <NumbersOfPlayers>{Players.length}</NumbersOfPlayers>
+        <NumbersOfPlayers>{players.length}</NumbersOfPlayers>
       </HeaderList>
+
+      <FlatList
+        data={players}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <PlayerCard name={item} onRemove={() => {}} />
+        )}
+      />
 
       <Filter title="Time A" />
     </Container>
