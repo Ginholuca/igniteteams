@@ -1,6 +1,7 @@
 import { Container, Form } from './styles'
 
 import { Header } from '@components/Header'
+import { Filter } from '@components/Filter'
 import { Input } from '@components/Input'
 import { Highlight } from '@components/HighLight'
 import { ButtonIcon } from '@components/ButtonIcon'
@@ -17,9 +18,10 @@ export function Players() {
 
       <Form>
         <Input placeholder="Nome da pessoa" autoCorrect={false} />
+        <ButtonIcon icon="add" />
       </Form>
 
-      <ButtonIcon icon="add" />
+      <Filter title="Time A" />
     </Container>
   )
 }
