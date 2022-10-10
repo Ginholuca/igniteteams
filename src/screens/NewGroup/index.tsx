@@ -11,7 +11,7 @@ export function NewGroup() {
   const navigation = useNavigation()
 
   function handleNew() {
-    navigation.navigate('new')
+    navigation.navigate('players', { group: 'Bob' })
   }
   return (
     <Container>

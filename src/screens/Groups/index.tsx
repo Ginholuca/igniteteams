@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { FlatList } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
+import { Container } from './styles'
+
 import { Header } from '@components/Header'
+import { Button } from '@components/Button'
 import { Highlight } from '@components/HighLight'
 import { GroupCard } from '@components/GroupCard'
-import { Button } from '@components/Button'
-
-import { Container } from './styles'
 import { ListEmpty } from '@components/ListEmpty'
 
 export function Groups() {
@@ -34,7 +34,6 @@ export function Groups() {
           <ListEmpty message="Cadastre a primeira turma!" />
         )}
       />
-
       <Button title="Criar nova turma" onPress={handleNewGroup} />
     </Container>
   )
