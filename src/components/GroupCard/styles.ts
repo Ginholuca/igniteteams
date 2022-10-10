@@ -28,4 +28,6 @@ export const Icon = styled(UsersThree).attrs(({ theme }) => ({
   size: 32,
   color: theme.COLORS.GREEN_700,
   weight: 'fill',
-}))``
+}))`
+  margin-right: 5px;
+`
